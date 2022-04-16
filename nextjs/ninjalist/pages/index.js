@@ -11,6 +11,9 @@ export default function Home() {
       <h1> Homepage</h1>
       <p>lorem nfgjlkgjsd;fS;lgjklkjlkfnkl  </p>
       <p> loremfkgjdbfjksfklasj</p>
+      <Link href="/ninjas">
+        <a> See Ninjas Listing</a>
+      </Link>
       <Footer/>
     </div>
   )
