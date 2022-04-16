@@ -5,7 +5,7 @@ import {useRouter} from 'next/router'// gives us method used to redirect user
 
 const NotFound = () => {
     useEffect( ()=> {
-
+       setTimeout( ()=> {},3000)
     }, [])// dependency array when empty tell use effect to fire function once,when component first moint and neva again
   return (
     <div className="not-found">
