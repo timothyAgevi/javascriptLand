@@ -1,3 +1,5 @@
+import styles from '../../styles/Ninjas.module.css'
+
 //getStaticProps only runs at build time,dont write browser code here
 export const getStaticProps=async ()=>{
     // res object of the fetch request
