@@ -1,10 +1,11 @@
 //loads links from client side instead of having server request
 import Link from'next/link'
+import Image from 'next/image'
 const Navbar = () => {
     return ( 
         <nav>
             <div className="logo">
-                <img  src='/logo.jpeg'/>
+                <Image src='/logo.jpeg' width={128} height={77}/>
             </div>
            
             <Link href="/"><a> Home</a></Link>
