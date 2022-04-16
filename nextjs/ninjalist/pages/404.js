@@ -7,7 +7,8 @@ const NotFound = () => {
     const router =useRouter(); //router object containig useRouter functions
     useEffect( ()=> {
        setTimeout( ()=> {
-
+        //  router.go(1)
+        router.push('/')
        },3000)
     }, [])// dependency array when empty tell use effect to fire function once,when component first moint and neva again
   return (
