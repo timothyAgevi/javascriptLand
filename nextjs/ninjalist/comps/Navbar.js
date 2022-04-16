@@ -1,6 +1,6 @@
 //loads links from client side instead of having server request
 import Link from'next/link'
-import Image from 'next/image'
+import Image from 'next/image'// lazy loading,responsiveness
 const Navbar = () => {
     return ( 
         <nav>
