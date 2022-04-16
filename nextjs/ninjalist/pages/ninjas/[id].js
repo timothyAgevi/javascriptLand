@@ -9,6 +9,10 @@ export const getStaticPaths =async() =>{
             params:{id :ninja.id.toString() }
         }
     })
+    return{
+        paths,
+        fallback:false
+    }
    
 }
 const Details = () => {
