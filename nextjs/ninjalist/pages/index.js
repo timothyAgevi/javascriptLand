@@ -7,6 +7,9 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <>
+    <Head>
+      
+    </Head>
     <div>
     
       <h1 className={styles.title}> Homepage</h1>
