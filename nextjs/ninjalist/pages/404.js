@@ -1,5 +1,6 @@
 import Link from 'next/link'
-
+import { useEffect } from 'react';// redirect user to homepage aftermviewing 404
+import {useRouter} from 'next/router'// gives us method used to redirect user 
 const NotFound = () => {
   return (
     <div className="not-found">
