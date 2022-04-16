@@ -4,7 +4,7 @@ const Navbar = () => {
             <div className="logo">
                 <h1> Ninja List</h1>
             </div>
-            //dummy links
+           
             <a> Home</a>
             <a>About</a>
             <a>Ninja Listings</a>
