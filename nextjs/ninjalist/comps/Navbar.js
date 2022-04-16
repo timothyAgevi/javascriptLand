@@ -1,3 +1,5 @@
+//loads links from client side instead of having server request
+import Link from'next/link'
 const Navbar = () => {
     return ( 
         <nav>
