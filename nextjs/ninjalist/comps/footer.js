@@ -1,8 +1,8 @@
 const Footer = () => {
     return ( 
-        <Footer>
+        <footer>
            Copyright 2021 ninja List 
-           </Footer>
+           </footer>
      );
 }
  
