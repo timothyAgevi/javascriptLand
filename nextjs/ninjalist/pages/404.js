@@ -4,8 +4,11 @@ import { useEffect } from 'react';// fires a function when component 1sr mounts
 import {useRouter} from 'next/router'// gives us method used to redirect user
 
 const NotFound = () => {
+    const router =useRouter(); //router object containig useRouter functions
     useEffect( ()=> {
-       setTimeout( ()=> {},3000)
+       setTimeout( ()=> {
+
+       },3000)
     }, [])// dependency array when empty tell use effect to fire function once,when component first moint and neva again
   return (
     <div className="not-found">
