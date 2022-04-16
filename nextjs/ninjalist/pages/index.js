@@ -6,13 +6,13 @@ import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 export default function Home() {
   return (
-    <div className={ styles.container} >
+    <div>
      
-      <h1> Homepage</h1>
-      <p>lorem nfgjlkgjsd;fS;lgjklkjlkfnkl  </p>
-      <p> loremfkgjdbfjksfklasj</p>
+      <h1 className={styles.title}> Homepage</h1>
+      <p className={styles.text}>lorem nfgjlkgjsd;fS;lgjklkjlkfnkl  </p>
+      <p className={styles.text}> loremfkgjdbfjksfklasj</p>
       <Link href="/ninjas">
-        <a> See Ninjas Listing</a>
+        <a className={styles.btn}> See Ninjas Listing</a>
       </Link>
      
     </div>
