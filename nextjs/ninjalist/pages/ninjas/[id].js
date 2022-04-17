@@ -1,4 +1,4 @@
-export const getStaticPaths =async() =>{
+export const getStaticPaths =async() =>{//specify dynamic routes to pre-render pages based on data
     const res= await fetch('https://jsonplaceholder.typicode.com/users');
     //data from json 
     const data= await res.json();
