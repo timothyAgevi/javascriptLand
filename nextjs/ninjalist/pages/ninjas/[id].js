@@ -15,7 +15,9 @@ export const getStaticPaths =async() =>{//specify dynamic routes to pre-render p
     }
     //get data for individual ninja
    export const getStaticProps=async (context)=>{ //context object attaches evey ninja id
-
+    const id = context.params.id;
+    //fetch request to each id
+    const res=fetch('https://jsonplaceholder.typicode.com/users' +id);
    }
 }
 const Details = () => {
