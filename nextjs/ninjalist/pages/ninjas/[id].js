@@ -13,7 +13,10 @@ export const getStaticPaths =async() =>{//specify dynamic routes to pre-render p
         paths,
         fallback:false
     }
-   
+    //get data for individual ninja
+   export const getStaticProps=async (context)=>{ //context object attaches evey ninja id
+
+   }
 }
 const Details = () => {
     return ( 
