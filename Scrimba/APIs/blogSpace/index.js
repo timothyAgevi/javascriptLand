@@ -32,5 +32,11 @@ fetch('https://jsonplaceholder.typicode.com/posts')
       title:postTitle,
       body:postBody
     }
-    console.log(data)
+    fetch("https://apis.scrimba.com/jsonplaceholder/posts",{
+      method:"POST",
+      body:JSON.stringify({
+        data
+      }),
+      headers:{}
+    })
 })
