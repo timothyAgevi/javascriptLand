@@ -1,5 +1,8 @@
 //global array variable for posts
 let postArray=[]
+//global title and body variables
+const titleInput = document.getElementById("post-title")
+const bodyInput = document.getElementById("post-body")
 //function to update DOM
 function renderPosts(){
   let html =""//variable to store postArray on DOM
@@ -25,8 +28,8 @@ fetch('https://jsonplaceholder.typicode.com/posts')
   document.getElementById("new-post").addEventListener("submit", function(e) {
     e.preventDefault()//prevents page refresh upon clicking submit
     //value input when post is created
-    const postTitle =document.getElementById("post-title").value
-    const postBody =document.getElementById("post-body").value
+    const postTitle =titleInput.value
+    const postBody =bodyInput.value
     //object containg title and body data
     const data ={
       title:postTitle,
@@ -48,8 +51,8 @@ fetch('https://jsonplaceholder.typicode.com/posts')
         postArray.unshift(post)
         renderPosts();
         //reset form
-        document.getElementById("post-title").value = ""
-        document.getElementById("post-body").value = ""
+        titleInput.value = ""
+        bodyInput.value = ""
       })
     
 })
