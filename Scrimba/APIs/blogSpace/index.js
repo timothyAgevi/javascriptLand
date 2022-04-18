@@ -30,5 +30,5 @@ fetch('https://jsonplaceholder.typicode.com/posts')
       title:postTitle,
       body:postBody
     }
-    c
+    console.log(data)
 })
