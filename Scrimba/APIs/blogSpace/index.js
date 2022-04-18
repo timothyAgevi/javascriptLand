@@ -1,12 +1,4 @@
-// GET a list of blog posts from the JSON Placeholder API.
- 
-// BaseURL: https://apis.scrimba.com/jsonplaceholder/
-// Endpoint: /posts
-//limit to 5 items
-// fetch("https://apis.scrimba.com/jsonplaceholder/posts")
-
-
-
+//global array variable for posts
 let postArray=[]
 //function to update DOM
 function renderPosts(){
