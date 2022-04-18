@@ -11,9 +11,9 @@ fetch('https://jsonplaceholder.typicode.com/posts')
     let html =""
     for(let post of postArr){
       html+=`
-      <h3> ${ post.title}<h/3>
+      <h3> ${post.title}<h/3>
       <p> ${post.body}</p>
       `
     }
-    document.getElementById("blog-list")
+    document.getElementById("blog-list").innerHTML=html
   })
