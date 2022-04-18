@@ -34,15 +34,21 @@ fetch('https://jsonplaceholder.typicode.com/posts')
       body:postBody
     }
    //options object to be passed to fetch request  
-    const options={method:"POST",
-    body:JSON.stringify({ //convert js object to json format
-      data
-    }),
+    const options={
+    method:"POST",
+    body:JSON.stringify(data),//convert js object to json format   
     headers:{
       "Content-Type": "application/json"
     }
   }
     fetch("https://apis.scrimba.com/jsonplaceholder/posts",options)
-      .then()
+      .then(res=>res.json())
+      .then(post => {
+        document.getElementById("blog-list").innerHTML += `
+                <h3>${post.title}</h3>
+                <p>${post.body}</p>
+                <hr />
+            `
+      })
     
 })
