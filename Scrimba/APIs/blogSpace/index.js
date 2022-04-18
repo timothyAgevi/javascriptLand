@@ -47,6 +47,9 @@ fetch('https://jsonplaceholder.typicode.com/posts')
         //display new post
         postArray.unshift(post)
         renderPosts();
+        //reset form
+        document.getElementById("post-title").value = ""
+        document.getElementById("post-body").value = ""
       })
     
 })
