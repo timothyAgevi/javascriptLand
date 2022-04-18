@@ -34,9 +34,11 @@ fetch('https://jsonplaceholder.typicode.com/posts')
     }
     fetch("https://apis.scrimba.com/jsonplaceholder/posts",{
       method:"POST",
-      body:JSON.stringify({
+      body:JSON.stringify({ //convert js object to json format
         data
       }),
-      headers:{}
+      headers:{
+        "Content-Type": "application/json"
+      }
     })
 })
