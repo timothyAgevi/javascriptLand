@@ -25,7 +25,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
   .then( response=> response.json())
   .then(data =>{    
      postArray =data.slice(0,3)//containg post arry
-    
+     renderPosts();
   })
 
   //Add post to server
