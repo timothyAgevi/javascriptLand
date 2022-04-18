@@ -8,5 +8,5 @@ fetch('https://jsonplaceholder.typicode.com/posts')
   .then( response=> response.json())
   .then(data =>{    
     const postArr =data.slice(0,3)
-    
+    let html =""
   })
