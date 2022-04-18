@@ -4,6 +4,8 @@
 // Endpoint: /posts
 //limit to 5 items
 // fetch("https://apis.scrimba.com/jsonplaceholder/posts")
+
+//GET Posts from api
 fetch('https://jsonplaceholder.typicode.com/posts')
   .then( response=> response.json())
   .then(data =>{    
