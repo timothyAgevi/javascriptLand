@@ -1,8 +1,9 @@
 //global array variable for posts
 let postArray=[]
-//global title and body variables
+//global title body ,form ,variables
 const titleInput = document.getElementById("post-title")
 const bodyInput = document.getElementById("post-body")
+const form = document.getElementById("new-post");
 //function to update DOM
 function renderPosts(){
   let html =""//variable to store postArray on DOM
@@ -25,7 +26,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
 
   //Add post to server
     //event to grab inputed values
-  document.getElementById("new-post").addEventListener("submit", function(e) {
+ form.addEventListener("submit", function(e) {
     e.preventDefault()//prevents page refresh upon clicking submit
     //value input when post is created
     const postTitle =titleInput.value
