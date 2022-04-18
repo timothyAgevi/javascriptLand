@@ -14,3 +14,6 @@ nav{
 nav > h3{
 margin: 0;
 }
+#blog-list{
+    padding-top: 30px;
+}
