@@ -2,5 +2,12 @@
  
 // BaseURL: https://apis.scrimba.com/jsonplaceholder/
 // Endpoint: /posts
-fetch('https://apis.scrimba.com/jsonplaceholder/posts',{method :"GET"})
-  .then()
+//limit to 5 items
+// fetch("https://apis.scrimba.com/jsonplaceholder/posts")
+fetch('https://jsonplaceholder.typicode.com/posts')
+  .then( response=> response.json())
+  .then(data =>{
+    
+    const postArr =data.slice(0,3)
+    console.log(postArr)
+  })
