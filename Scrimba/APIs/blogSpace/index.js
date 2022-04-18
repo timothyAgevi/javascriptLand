@@ -54,6 +54,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
       .then(post => {
         //display new post
         postArray.unshift(post)
+        renderPosts();
       })
     
 })
