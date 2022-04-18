@@ -53,12 +53,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
       .then(res=>res.json())
       .then(post => {
         //display new post
-        document.getElementById("blog-list").innerHTML = `
-                <h3>${post.title}</h3>
-                <p>${post.body}</p>
-                <hr />
-                ${document.getElementById("blog-list").innerHTML}
-            `
+        postArray.unshift(post)
       })
     
 })
