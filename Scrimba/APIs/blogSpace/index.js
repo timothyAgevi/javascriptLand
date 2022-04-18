@@ -18,3 +18,8 @@ fetch('https://jsonplaceholder.typicode.com/posts')
     }
     document.getElementById("blog-list").innerHTML=html
   })
+
+  //Posting post to server
+  document.getElementById("new-post").addEventListener("submit", function(e) {
+    e.preventDefault()/
+})
