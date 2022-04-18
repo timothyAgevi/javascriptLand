@@ -44,10 +44,12 @@ fetch('https://jsonplaceholder.typicode.com/posts')
     fetch("https://apis.scrimba.com/jsonplaceholder/posts",options)
       .then(res=>res.json())
       .then(post => {
-        document.getElementById("blog-list").innerHTML += `
+        //display new post
+        document.getElementById("blog-list").innerHTML = `
                 <h3>${post.title}</h3>
                 <p>${post.body}</p>
                 <hr />
+                ${document.getElementById("blog-list").innerHTML}
             `
       })
     
