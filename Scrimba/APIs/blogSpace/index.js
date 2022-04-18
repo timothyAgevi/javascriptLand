@@ -9,4 +9,10 @@ fetch('https://jsonplaceholder.typicode.com/posts')
   .then(data =>{    
     const postArr =data.slice(0,3)
     let html =""
+    for(let post of postArr){
+      html+=`
+      <h3> ${ post.title}<h/3>
+      <p> ${post.body}</p>
+      `
+    }
   })
