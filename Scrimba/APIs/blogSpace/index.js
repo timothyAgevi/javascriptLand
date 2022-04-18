@@ -15,4 +15,5 @@ fetch('https://jsonplaceholder.typicode.com/posts')
       <p> ${post.body}</p>
       `
     }
+    document.getElementById("blog-list")
   })
