@@ -52,8 +52,10 @@ fetch('https://jsonplaceholder.typicode.com/posts')
         postArray.unshift(post)
         renderPosts();
         //reset form
-        titleInput.value = ""
-        bodyInput.value = ""
+        // titleInput.value = ""
+        // bodyInput.value = ""
+        //inset use
+        form.reset();
       })
     
 })
