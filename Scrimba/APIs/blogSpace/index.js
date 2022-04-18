@@ -5,11 +5,14 @@
 //limit to 5 items
 // fetch("https://apis.scrimba.com/jsonplaceholder/posts")
 
+
+
+let postArray=[]
 //GET Posts from api
 fetch('https://jsonplaceholder.typicode.com/posts')
   .then( response=> response.json())
   .then(data =>{    
-    const postArr =data.slice(0,3)//containg post arry
+     postArr =data.slice(0,3)//containg post arry
     let html =""//variable to store postArray on DOM
     for(let post of postArr){
       html+=`
@@ -21,7 +24,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
     document.getElementById("blog-list").innerHTML=html
   })
 
-  //Posting post to server
+  //Add post to server
     //event to grab inputed values
   document.getElementById("new-post").addEventListener("submit", function(e) {
     e.preventDefault()//prevents page refresh upon clicking submit
@@ -33,6 +36,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
       title:postTitle,
       body:postBody
     }
+
    //options object to be passed to fetch request  
     const options={
     method:"POST",
