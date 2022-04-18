@@ -22,5 +22,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
   //Posting post to server
   document.getElementById("new-post").addEventListener("submit", function(e) {
     e.preventDefault()//prevents page refresh upon clicking submit
-    
+    //value input when post is created
+    const postTitle =document.getElementById("post-title").value
+    const postBody =document.getElementById("post-body").value
 })
