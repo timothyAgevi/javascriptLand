@@ -22,6 +22,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
   })
 
   //Posting post to server
+    //event to grab inputed values
   document.getElementById("new-post").addEventListener("submit", function(e) {
     e.preventDefault()//prevents page refresh upon clicking submit
     //value input when post is created
@@ -32,13 +33,16 @@ fetch('https://jsonplaceholder.typicode.com/posts')
       title:postTitle,
       body:postBody
     }
-    fetch("https://apis.scrimba.com/jsonplaceholder/posts",{
-      method:"POST",
-      body:JSON.stringify({ //convert js object to json format
-        data
-      }),
-      headers:{
-        "Content-Type": "application/json"
-      }
-    })
+   //options object to be passed to fetch request  
+    const options={method:"POST",
+    body:JSON.stringify({ //convert js object to json format
+      data
+    }),
+    headers:{
+      "Content-Type": "application/json"
+    }
+  }
+    fetch("https://apis.scrimba.com/jsonplaceholder/posts",options)
+      .then()
+    
 })
