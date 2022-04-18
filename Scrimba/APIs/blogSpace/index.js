@@ -8,13 +8,10 @@
 
 
 let postArray=[]
-//GET Posts from api
-fetch('https://jsonplaceholder.typicode.com/posts')
-  .then( response=> response.json())
-  .then(data =>{    
-     postArr =data.slice(0,3)//containg post arry
-    let html =""//variable to store postArray on DOM
-    for(let post of postArr){
+//function to update DOM
+function renderPosts(){
+  let html =""//variable to store postArray on DOM
+    for(let post of postArray){
       html+=`
       <h3> ${post.title}<h/3>
       <p> ${post.body}</p>
@@ -22,6 +19,13 @@ fetch('https://jsonplaceholder.typicode.com/posts')
       `
     }
     document.getElementById("blog-list").innerHTML=html
+}
+//GET Posts from api
+fetch('https://jsonplaceholder.typicode.com/posts')
+  .then( response=> response.json())
+  .then(data =>{    
+     postArray =data.slice(0,3)//containg post arry
+    
   })
 
   //Add post to server
