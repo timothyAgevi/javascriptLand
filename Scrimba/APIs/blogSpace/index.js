@@ -25,4 +25,10 @@ fetch('https://jsonplaceholder.typicode.com/posts')
     //value input when post is created
     const postTitle =document.getElementById("post-title").value
     const postBody =document.getElementById("post-body").value
+    //object containg title and body data
+    const data ={
+      title:postTitle,
+      body:postBody
+    }
+    c
 })
