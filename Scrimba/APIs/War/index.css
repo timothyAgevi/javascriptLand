@@ -1,4 +1,9 @@
 html, body {
     margin: 0;
     padding: 0;
+    background-image: url("img/table.png");
+}
+button {
+    background-color: #FFF100;
+    cursor: pointer;
 }
