@@ -5,6 +5,11 @@ html, body {
     font-family:"Exo 2", sans-serif;
     height: 100vh;
 }
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 button {
     background-color: #FFF100;
