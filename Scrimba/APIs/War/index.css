@@ -7,4 +7,5 @@ html, body {
 button {
     background-color: #FFF100;
     cursor: pointer;
+    border:none;
 }
