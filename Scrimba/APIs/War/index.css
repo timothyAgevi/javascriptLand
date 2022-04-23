@@ -17,3 +17,8 @@ button {
     border:none;
 
 }
+
+button.draw {
+    font-size: 1.2em;
+    padding: 10
+}
