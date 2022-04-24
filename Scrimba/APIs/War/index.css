@@ -27,6 +27,7 @@ button#new-deck {
 button.draw {
     font-size: 1.2em;
     padding: 5px;
+    align-self:stretch;
 }
 div.card-slot {
     border: 1px solid black;
