@@ -34,3 +34,7 @@ div.card-slot {
     height: 120px;
     width: calc(120px * 5 / 7);
 }
+
+div.card-slot:nth-of-type(1) {
+    margin-bottom: 50px;
+}
