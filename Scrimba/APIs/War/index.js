@@ -21,7 +21,7 @@ drawCardBtn.addEventListener("click", () => {
     fetch("https://deckofcardsapi.com/api/deck/${deckid}/draw/?count=2") //  https://deckofcardsapi.com/api/deck/                                                                                     
         .then(res => res.json())//https://deckofcardsapi.com/#draw-card  docs
         .then(data => {
-            console.log(data.cards)
+            console.log(data.remaining);
             cardsContainer.chilren[0].innerHTML = `<img src=${data.cards[0].image}class ="card" />`
 
                 cardsContainer.chilren[1].innerHTML =`<img src=${data.cards[1].image}class ="card" />`
