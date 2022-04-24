@@ -37,6 +37,16 @@ drawCardBtn.addEventListener("click", () => {
                 //disable draw button if there r no  cards remaining
                 if (data.remaining === 0) {
                     drawCardBtn.disabled = true
+                    if (computerScore > myScore) {
+                        // display "The computer won the game!"
+                        header.textContent = "The computer won the game!"
+                    } else if (myScore > computerScore) {
+                        // display "You won the game!"
+                        header.textContent = "You won the game!"
+                    } else {
+                        // display "It's a tie game!"
+                        header.textContent = "It's a tie game!"
+                    }
                 }
         })
 })
@@ -48,9 +58,11 @@ function determineCardWinner(card1, card2) {
   
     if (card1ValueIndex > card2ValueIndex) {
         computerScore++
+        computerScoreEl.textContent=`Computer score :${computerScore}`
         return "Computer wins!"
     } else if (card1ValueIndex < card2ValueIndex) {
         myScore++
+        myScoreEl.textContent=`My score :${computerScore}`
         return "You wins!"
     } else {
         return "It's a tie!"
