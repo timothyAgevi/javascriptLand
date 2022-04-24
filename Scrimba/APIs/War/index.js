@@ -11,13 +11,12 @@ const myScoreEl=document.getElementById("my-score")
 
  async function handleClick() {
     // fetch("https://apis.scrimba.com/deckofcards/api/deck/new/shuffle/")
-     await fetch("https://deckofcardsapi.com/api/deck/${deckid}")
-        .then(res => res.json())
-        .then(data => {
+     const response =await fetch("https://deckofcardsapi.com/api/deck/${deckid}")
+     const data =await response.json()        
             remainingText.textContent=`Remaining cards : ${data.remaining}`
             deckId = data.deck_id
             console.log(deckId)
-        })
+        
 }
 
 newDeckBtn.addEventListener("click", handleClick)
