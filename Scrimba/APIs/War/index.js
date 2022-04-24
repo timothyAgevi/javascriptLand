@@ -35,6 +35,15 @@ function determineCardWinner(card1, card2) {
     console.log("card 1:", card1ValueIndex)
     console.log("card 2:", card2ValueIndex)
 }
+
+const card1Obj = {
+    value: "7"
+}
+const card2Obj = {
+    value: "KING"
+}
+
+determineCardWinner(card1Obj, card2Obj)
 /**
  * Challenge:
  * 
