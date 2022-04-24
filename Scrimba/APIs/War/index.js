@@ -3,6 +3,7 @@ const cardsContainer = document.getElementById("cards");
 const newDeckBtn=document.getElementById("new-deck");
 const drawCardBtn =document.getElementById("draw-cards")
 const header= document.getElementById("header")
+const remaingText =document.getElementById("remaining")
 
 function handleClick() {
     // fetch("https://apis.scrimba.com/deckofcards/api/deck/new/shuffle/")
