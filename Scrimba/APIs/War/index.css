@@ -46,6 +46,7 @@ img.card{
 }
 div.top{
     display: flex;
+    align-self:flex-start;
 }
 div.top >p{
     margin: 0;
