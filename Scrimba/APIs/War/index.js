@@ -10,6 +10,7 @@ function handleClick() {
     fetch("https://deckofcardsapi.com/api/deck/${deckid}")
         .then(res => res.json())
         .then(data => {
+            remainingText.textContent=`Remaining cards : ${data.remaining}`
             deckId = data.deck_id
             console.log(deckId)
         })
