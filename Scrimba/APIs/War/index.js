@@ -30,6 +30,10 @@ drawCardBtn.addEventListener("click", () => {
                 constwinnerText =determineCardWinner(data.cards[0],data.cards[1]);
                 console.log(winnerText)
                 header.textContent = winnerText;
+                //disable draw button if there r no  cards remaining
+                if (data.remaining === 0) {
+                    drawCardBtn.disabled = true
+                }
         })
 })
 function determineCardWinner(card1, card2) {
