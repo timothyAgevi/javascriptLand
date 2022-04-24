@@ -4,6 +4,8 @@ const newDeckBtn=document.getElementById("new-deck");
 const drawCardBtn =document.getElementById("draw-cards")
 const header= document.getElementById("header")
 const remainingText =document.getElementById("remaining")
+const computerScoreEl=document.getElementById("computer-score")
+const myScoreEl=document.getElementById("my-score")
 
 function handleClick() {
     // fetch("https://apis.scrimba.com/deckofcards/api/deck/new/shuffle/")
