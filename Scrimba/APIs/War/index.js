@@ -27,7 +27,7 @@ drawCardBtn.addEventListener("click", () => {
                 cardsContainer.chilren[1].innerHTML =`<img src=${data.cards[1].image}class ="card" />`
                 constwinnerText =determineCardWinner(data.cards[0],data.cards[1]);
                 console.log(winnerText)
-                document.getElementById("header")
+                header.textContent = winnerText;
         })
 })
 function determineCardWinner(card1, card2) {
