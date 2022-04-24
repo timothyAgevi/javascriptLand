@@ -12,14 +12,14 @@ function handleClick() {
 document.getElementById("new-deck").addEventListener("click", handleClick)
 
 document.getElementById("draw-cards").addEventListener("click", () => {
-    fetch(`https://apis.scrimba.com/deckofcards/api/deck/${deckId}/draw/?count=2`)
-        .then(res => res.json())
+    // fetch(`https://apis.scrimba.com/deckofcards/api/deck/${deckId}/draw/?count=2`) 
+    fetch("https://deckofcardsapi.com/api/deck/${deckid}/draw/?count=2") //  https://deckofcardsapi.com/api/deck/                                                                                     
+        .then(res => res.json())//https://deckofcardsapi.com/#draw-card  docs
         .then(data => {
             console.log(data.cards)
             document.getElementById("cards").innerHTML = `
-                <img src=${data.cards[0].image} />
-                <img src=${data.cards[1].image} />
-            `
+                <img src=${data.cards[0].image}class ="card" />
+                <img src=${data.cards[1].image}class ="card" />`
         })
 })
 /**
