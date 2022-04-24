@@ -17,8 +17,10 @@ document.getElementById("draw-cards").addEventListener("click", () => {
         .then(res => res.json())//https://deckofcardsapi.com/#draw-card  docs
         .then(data => {
             console.log(data.cards)
-            document.getElementById("cards").innerHTML = `
-                <img src=${data.cards[0].image}class ="card" />
+            document.getElementById("cards").chilren[0].innerHTML = `
+                <img src=${data.cards[0].image}class ="card" />`
+                
+                document.getElementById("cards").chilren[1].innerHTML =`
                 <img src=${data.cards[1].image}class ="card" />`
         })
 })
