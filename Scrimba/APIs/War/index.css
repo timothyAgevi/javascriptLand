@@ -47,3 +47,7 @@ img.card{
 div.top{
     display: flex;
 }
+div.top >p{
+    margin: 0;
+    margin-left: 10px;
+}
