@@ -1,7 +1,7 @@
 let deckId
 const cardsContainer = document.getElementById("cards");
 const newDeckBtn=document.getElementById("new-deck");
-
+const drawCardBtn =document.getElementById("draw-cards")
 function handleClick() {
     // fetch("https://apis.scrimba.com/deckofcards/api/deck/new/shuffle/")
     fetch("https://deckofcardsapi.com/api/deck/")
@@ -14,7 +14,7 @@ function handleClick() {
 
 newDeckBtn.addEventListener("click", handleClick)
 
-document.getElementById("draw-cards").addEventListener("click", () => {
+drawCardBtn.addEventListener("click", () => {
     // fetch(`https://apis.scrimba.com/deckofcards/api/deck/${deckId}/draw/?count=2`) 
     fetch("https://deckofcardsapi.com/api/deck/${deckid}/draw/?count=2") //  https://deckofcardsapi.com/api/deck/                                                                                     
         .then(res => res.json())//https://deckofcardsapi.com/#draw-card  docs
