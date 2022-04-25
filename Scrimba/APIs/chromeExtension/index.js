@@ -55,6 +55,15 @@ setInterval(getCurrentTime, 1000)
 //get local position ,BaseURL: https://apis.scrimba.com/openweathermap/data/2.5/weather
 navigator.geolocation.getCurrentPosition(position => {
     fetch("https://apis.scrimba.com/openweathermap/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=imperial")
+    .then(res => {
+        if (!res.ok) {
+            throw Error("Weather data not available")
+        }
+        return res.json()
+    })
+    .then(data => {
+        console.log(data)
+    })
 });
 
 /**
