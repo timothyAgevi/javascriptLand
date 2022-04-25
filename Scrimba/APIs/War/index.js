@@ -11,8 +11,8 @@ const myScoreEl=document.getElementById("my-score")
 
  async function handleClick() {
     // fetch("https://apis.scrimba.com/deckofcards/api/deck/new/shuffle/")
-     const response =await fetch("https://deckofcardsapi.com/api/deck/${deckid}")
-     const data =await response.json()        
+     const res =await fetch("https://deckofcardsapi.com/api/deck/${deckid}")
+     const data =await res.json()        
             remainingText.textContent=`Remaining cards : ${data.remaining}`
             deckId = data.deck_id
             console.log(deckId)
@@ -21,15 +21,14 @@ const myScoreEl=document.getElementById("my-score")
 
 newDeckBtn.addEventListener("click", handleClick)
 
-drawCardBtn.addEventListener("click", () => {
+drawCardBtn.addEventListener("click",async  () => {
     // fetch(`https://apis.scrimba.com/deckofcards/api/deck/${deckId}/draw/?count=2`) 
-    fetch("https://deckofcardsapi.com/api/deck/${deckid}/draw/?count=2") //  https://deckofcardsapi.com/api/deck/                                                                                     
-        .then(res => res.json())//https://deckofcardsapi.com/#draw-card  docs
-        .then(data => {
+     const res = fetch("https://deckofcardsapi.com/api/deck/${deckid}/draw/?count=2") //  https://deckofcardsapi.com/api/deck/ 
+        const data= res.json();  //https://deckofcardsapi.com/#draw-card  docs                                                                             
+               
             remainingText.textContent=`Remaining cards : ${data.remaining}`
             cardsContainer.chilren[0].innerHTML = `<img src=${data.cards[0].image}class ="card" />`
-
-                cardsContainer.chilren[1].innerHTML =`<img src=${data.cards[1].image}class ="card" />`
+            cardsContainer.chilren[1].innerHTML =`<img src=${data.cards[1].image}class ="card" />`
                 constwinnerText =determineCardWinner(data.cards[0],data.cards[1]);
                 console.log(winnerText)
                 header.textContent = winnerText;
@@ -47,7 +46,7 @@ drawCardBtn.addEventListener("click", () => {
                         header.textContent = "It's a tie game!"
                     }
                 }
-        })
+        
 })
 function determineCardWinner(card1, card2) {
     const valueOptions = ["2", "3", "4", "5", "6", "7", "8", "9", 
@@ -68,14 +67,7 @@ function determineCardWinner(card1, card2) {
     }
 }
 
-const card1Obj = {
-    value: "7"
-}
-const card2Obj = {
-    value: "KING"
-}
 
-determineCardWinner(card1Obj, card2Obj)
 /**
  * Challenge:
  * 
