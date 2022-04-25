@@ -28,3 +28,10 @@ div.top {
 h1.time {
     text-align: center;
 }
+div#crypto {
+    font-size: 1.3rem;
+}
+div#crypto-top {
+    display: flex;
+    align-items: center;
+}
