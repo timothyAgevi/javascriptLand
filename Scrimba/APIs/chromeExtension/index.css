@@ -40,4 +40,8 @@ div#crypto-top > span {
 }
 div#weather {
     display: flex;
-}
+    align-items: center;
+    }
+    div#weather > img {
+        width: 70px;
+    }
