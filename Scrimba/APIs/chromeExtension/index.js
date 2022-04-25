@@ -52,9 +52,9 @@ document.getElementById("time").textContent=date.toLocaleTimeString("en-us", {ti
 }
 setInterval(getCurrentTime, 1000)
 
-//get local position
+//get local position ,BaseURL: https://apis.scrimba.com/openweathermap/data/2.5/weather
 navigator.geolocation.getCurrentPosition(position => {
-    console.log(position)
+    fetch("https://apis.scrimba.com/openweathermap/data/2.5/weather")
 });
 
 /**
