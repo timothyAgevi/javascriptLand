@@ -35,3 +35,6 @@ div#crypto-top {
     display: flex;
     align-items: center;
 }
+div#crypto-top > span {
+    margin-left: 10px;
+}
