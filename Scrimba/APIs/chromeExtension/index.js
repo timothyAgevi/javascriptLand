@@ -34,7 +34,10 @@
         return res.json()
     })
     .then(data => {
-        console.log(data)
+        document.getElementById("crypto").innerHTML = `
+        <img src=${data.image.small} />
+        <span>${data.name}</span>
+    `
     })
     .catch(err => console.error(err))
 /**
