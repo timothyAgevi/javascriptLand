@@ -43,6 +43,7 @@ div#weather {
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-end;
+    align-self: flex-start;
     }
 
     div#weather > img {
