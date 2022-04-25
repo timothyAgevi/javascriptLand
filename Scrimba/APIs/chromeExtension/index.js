@@ -16,6 +16,8 @@
  * Instructions for this were found on CSS Tricks: 
  * https://css-tricks.com/perfect-full-page-background-image/#awesome-easy-progressive-css3-way)
  */
+
+// set background image
   fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=nature")
   .then(res => res.json())
   .then(data => {
@@ -65,6 +67,7 @@ navigator.geolocation.getCurrentPosition(position => {
         const iconUrl = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
         document.getElementById("weather").innerHTML = `
             <img src=${iconUrl} />
+            <p>${data.main.temp}</p>
         `    
     })
     .catch(err => console.error(err))
