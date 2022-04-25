@@ -34,7 +34,7 @@
         return res.json()
     })
     .then(data => {
-        document.getElementById("crypto").innerHTML = `
+        document.getElementById("crypto-top").innerHTML = `
         <img src=${data.image.small} />
         <span>${data.name}</span>
     `
