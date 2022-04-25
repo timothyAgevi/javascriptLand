@@ -45,9 +45,10 @@
         `
     })
     .catch(err => console.error(err))
+    function getCurrentTime(){
     const date = new Date()
 document.getElementById("time").date.toLocaleTimeString("en-us", {timeStyle: "short"})
-
+}
 /**
  * {
 	id: "KMn4VEeEPR8",
