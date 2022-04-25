@@ -45,6 +45,8 @@
         `
     })
     .catch(err => console.error(err))
+    const date = new Date()
+document.getElementById("time").date.toLocaleTimeString("en-us", {timeStyle: "short"})
 
 /**
  * {
