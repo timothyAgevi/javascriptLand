@@ -42,6 +42,7 @@ div#weather {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: flex-end;
     }
 
     div#weather > img {
@@ -50,4 +51,6 @@ div#weather {
 
     p.weather-city {
         width: 100%;
+        text-align:right;
+        margin:0;
     }
