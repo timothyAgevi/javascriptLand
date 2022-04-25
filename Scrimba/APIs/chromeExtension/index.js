@@ -45,12 +45,18 @@
         `
     })
     .catch(err => console.error(err))
-
+//display time
     function getCurrentTime(){
     const date = new Date()
 document.getElementById("time").textContent=date.toLocaleTimeString("en-us", {timeStyle: "full"}) //short,medium,
 }
 setInterval(getCurrentTime, 1000)
+
+//get local position
+navigator.geolocation.getCurrentPosition(position => {
+    console.log(position)
+});
+
 /**
  * {
 	id: "KMn4VEeEPR8",
