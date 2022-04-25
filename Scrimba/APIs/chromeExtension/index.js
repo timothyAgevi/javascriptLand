@@ -49,6 +49,7 @@
     const date = new Date()
 document.getElementById("time").date.toLocaleTimeString("en-us", {timeStyle: "short"})
 }
+setInterval(getCurrentTime, 1000)
 /**
  * {
 	id: "KMn4VEeEPR8",
