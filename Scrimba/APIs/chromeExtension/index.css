@@ -43,6 +43,11 @@ div#weather {
     align-items: center;
     flex-wrap: wrap;
     }
+
     div#weather > img {
         width: 70px;
+    }
+
+    p.weather-city {
+        width: 100%;
     }
