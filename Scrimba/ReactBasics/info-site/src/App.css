@@ -36,6 +36,9 @@
     transform: rotate(360deg);
   }
 }
+.nav-logo {
+  width: 60px;
+}
 .nav-items {
   list-style: none;
   display:flex;
