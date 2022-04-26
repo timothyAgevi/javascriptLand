@@ -4,21 +4,8 @@ import React from "react"
 // import Navbar from "./components/Navbar"
 // import Main from "./components/Main"
 import ReactDOM from "react-dom"
+import Header from "./Header"
 
-function Header() {
-  return (
-      <header>
-          <nav className="nav">
-              <img src="./logo192.png" width="40px"  alt="React Logo" className="nav-logo" />
-              <ul className="nav-items">
-                    <li>Pricing</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-          </nav>
-      </header>
-  )
-}
 
 function Footer() {
   return (
