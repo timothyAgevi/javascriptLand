@@ -5,7 +5,7 @@ import React from "react"
 // import Main from "./components/Main"
 import ReactDOM from "react-dom"
 import Header from "./Header"
-
+import Footer from "./Components/Footer"
 
 function Footer() {
   return (
