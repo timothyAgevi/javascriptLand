@@ -54,10 +54,10 @@ body{
   padding: 30px 25px;
 }
 
-nav >h3,nav>h4{
+.nav--logo_text,.nav--title{
   margin: 0;
 }
-nav >h3{
+.nav--logo_text{
   margin-right: auto;
   color: #61DAFB;
   font-weight: 700;
