@@ -102,3 +102,11 @@ main{
 main--facts{
   margin-top: 46px;
 }
+main--facts >li{
+  line-height: 19px;
+  max-width:400px;
+}
+.main--facts > li::marker {
+  font-size: 1.4rem;
+  color: #61DAFB;
+}
