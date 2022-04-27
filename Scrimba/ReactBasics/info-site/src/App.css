@@ -77,6 +77,10 @@ body{
 main{
    padding: 57px 27px;
    color:white;
+   background-image: url(./images/logo.svg);
+  background-repeat: no-repeat;
+    background-position: right 75%;
+
 }
 .nav-logo {
   width: 60px;
