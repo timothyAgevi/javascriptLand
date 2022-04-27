@@ -44,6 +44,7 @@ body{
   margin: 0;
   font-family:Inter,sans-serif;
   height:100vh;
+  background-color: #282D35;
 }
 
 .nav{
@@ -74,7 +75,7 @@ body{
 }
 
 main{
-  background-color: #282D35;
+ 
   height: 100%;
 }
 .nav-logo {
