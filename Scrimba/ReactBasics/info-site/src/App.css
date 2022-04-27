@@ -71,6 +71,11 @@ body{
   height:30px;
   margin-right:7px;
 }
+
+main{
+  background-color: #282D35;
+  height: 100%;
+}
 .nav-logo {
   width: 60px;
 }
