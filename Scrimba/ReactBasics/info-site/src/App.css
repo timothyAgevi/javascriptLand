@@ -63,9 +63,9 @@ body{
   font-weight: 700;
   font-size: 22px;
 }
-nav>h4{
+.nav--title{
   color: #DEEBF8;
-    font-weight: 600;
+  font-weight: 600;
 }
 nav>img{
   height:30px;
