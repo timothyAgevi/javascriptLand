@@ -93,3 +93,6 @@ main{
   height: 30px;
   margin-right: 7px;
 }
+.main--title{
+  margin:0;
+}
