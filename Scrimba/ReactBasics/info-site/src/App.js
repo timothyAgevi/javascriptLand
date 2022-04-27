@@ -5,33 +5,25 @@ import React from "react"
 // import Main from "./components/Main"
 import ReactDOM from "react-dom"
 import Header from "./Header"
-import Footer from "./Components/Footer"
+import Footer from "./Footer"
 
-function Footer() {
-  return (
-      <footer>
-          <small>© 2021 Ziroll development. All rights reserved.</small>
-      </footer>
-  )
-}
+import Main from "./Main"
+// Scrimba/ReactBasics/info-site/src/Main.js
 
 
 
-function Page() {
+
+function App() {
   return (
       <div>
           <Header />
-          <MainContent />
+          <Main/>
           <Footer />
       </div>
   )
 }
 
-function App(){
-  return(
-    <Page/>
-  )
-}
-ReactDOM.render(<Page />, document.getElementById("root"))
+
+ReactDOM.render(<App />, document.getElementById("root"))
 
 export default App;
