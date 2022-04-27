@@ -56,3 +56,7 @@
 .nav-items > li {
   padding: 10px;
 }
+.nav--icon {
+  height: 30px;
+  margin-right: 7px;
+}
