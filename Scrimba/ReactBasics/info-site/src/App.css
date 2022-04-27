@@ -97,6 +97,7 @@ main{
 .main--title{
   margin:0;
   font-size:39px;
+  letter-spacing:-0.05em;
 }
 main--facts{
   margin-top: 46px;
